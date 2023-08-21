@@ -2,7 +2,7 @@
 	<header>
 	  <nav class="navbar">
 		<nuxt-link to="/">
-		  <img class="header_img" src="~/static/a9ra2.png" alt="Logo" />
+		  <img class="header_img" src="~/static/i9ra.png" alt="Logo" />
 		</nuxt-link>
 	  </nav>
 	</header>

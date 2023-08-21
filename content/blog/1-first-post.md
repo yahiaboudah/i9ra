@@ -5,10 +5,30 @@ slug: 1-first-post
 img: blog-1.jpg
 ---
 
-# My first blog post
+مُحرر دوّن هو محرر ماركداون (Markdown) سهل للغاية، لا يحتاج منك أي جهد لتعلم الكتابة به. فقط اكتب أو عدّل هذا النص!
+يمكنك إدراج رابط بهذا الشكل: [نص الرابط](http://example.com). كما يمكنك أيضا **تثخين** النص، أو *إمالته* أو حتى جعله ~~مشطبا~~ إن احتجت لذلك :)
 
-Welcome to my first blog post using content module
+> هذا مثال على اقتباس، لاحظ استباقه بعلامة أكبر
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo. Suscipit unde labore necessitatibus fugiat? Repellendus magnam reprehenderit, repudiandae impedit suscipit pariatur unde reiciendis aperiam dolore aliquam aut eum sapiente molestiae animi praesentium numquam, dolores quisquam exercitationem beatae nulla? Maxime.
+مع تغيير تلقائي للاتجاه وتجربة قراءة أمتع.
+# عنوان أول
+هذا مثال لعنوان، فقط قم بسبقه بعلامة (#) ثم مسافة. ثم مسافة ثم بعدها مسافة ثم مسافة بعدها و كذلك هي المسافة. 
+## عنوان ثاني
+هذا مثال عنوان فرعي من الدرجة الثانية لا حظ زيادة علامة (#) لجعله هكذا.
+### عنوان ثالث
+#### عنوان رابع
 
-Suscipit unde labore necessitatibus fugiat? Repellendus magnam reprehenderit, repudiandae impedit suscipit pariatur unde reiciendis aperiam dolore aliquam aut eum sapiente molestiae animi praesentium numquam, dolores quisquam exercitationem beatae nulla? Maxime.
+أدرج صورًا بهذا الشكل:
+![نص الصورة](https://app.dawin.io/example.png)
+
+أو قائمة عناصر بهذا الشكل:
+* عنصر
+* عنصر آخر
+* عنصر آخر
+
+وإن احتجت قائمة مرتبة:
+1. عنصر أول
+2. عنصر ثانٍ
+3. عنصر ثالث.
+
+مبدئيا هذا ما ستحتاجه لكتابة محتوىً مذهل :)

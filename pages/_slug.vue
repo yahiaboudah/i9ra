@@ -1,6 +1,6 @@
 <template>
   <article>
-	  <nuxt-content :document="article" />
+	  <nuxt-content dir="rtl" :document="article" />
   </article>
 </template>
 

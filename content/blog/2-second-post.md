@@ -1,7 +1,7 @@
 ---
 title: My second blog post
 description: Welcome to my second blog post using the content module.
-slug: second-post
+slug: 2-second-post
 img: blog-2.jpg
 ---
 

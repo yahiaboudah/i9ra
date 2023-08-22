@@ -47,6 +47,7 @@ export default {
 @media (max-width: 500px) {
   .article-inner {
     flex-direction: column; /* Stack elements on mobile */
+    align-items: center;
   }
 
   .article-inner img {

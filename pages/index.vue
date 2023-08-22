@@ -41,7 +41,24 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+
+@media (max-width: 500px) {
+  .article-inner {
+    flex-direction: column; /* Stack elements on mobile */
+  }
+
+  .article-inner img {
+    width: 100%;
+    max-width: 440px; /* Adjust image width to fit mobile screen */
+    margin-bottom: 15px; /* Add margin to separate image and text */
+  }
+
+  .article-inner .detail {
+    text-align: center; /* Center-align text on mobile */
+  }
+}
 
 .home-page {
   padding: 50px 30px;

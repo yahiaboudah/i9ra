@@ -1,20 +1,27 @@
 <template>
   <div class="home-page">
-	  <h2>المنشورات</h2>
-	  <div class="articles">
-		  <div class="article" v-for="article of articles" :key="article">
+	  
+    <h2>المنشورات</h2>
+	  
+    <div class="articles">
+		  
+      <div class="article" v-for="article of articles" :key="article">
 			  <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
 				  <div class="article-inner">
 						<img :src="require(`~/assets/resources/${article.img}`)" alt="" />
 						<div class="detail">
 							<h3>{{ article.title }}</h3>
 							<p>{{ article.description }}</p>
+							<p>{{ article.createdAt }}</p>
 						</div>
 				  </div>
 			  </nuxt-link>
 		  </div>
-	  </div>
+	  
+    </div>
+  
   </div>
+
 </template>
 
 <script>

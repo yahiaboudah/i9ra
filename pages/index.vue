@@ -3,18 +3,20 @@
 	  
     <h2>المنشورات</h2>
 	  
-    <div class="articles">
+    <div dir="rtl" class="articles">
 		  
       <div class="article" v-for="article of articles" :key="article">
 			  <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
 				  <div class="article-inner">
-						<img :src="require(`~/assets/resources/${article.img}`)" alt="" />
-						<div class="detail">
+					
+            <img :src="require(`~/assets/resources/${article.img}`)" alt="" />
+					
+            <div class="detail">
 							<h3>{{ article.title }}</h3>
-							<p>{{ article.description }}</p>
-							<p>{{ article.createdAt }}</p>
+							<p class="desc">{{ article.description }}</p>
 						</div>
-				  </div>
+				  
+          </div>
 			  </nuxt-link>
 		  </div>
 	  
@@ -71,11 +73,16 @@ h2 {
 .article-inner img {
   display: block;
   width: 100%;
-  max-width: 300px;
+  max-width: 220px;
 }
 .article-inner .detail {
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 10px;
+}
+
+.article-inner .desc {
+  margin-top: 10px;
 }
 
 h3 {

@@ -3,6 +3,7 @@ title: My fourth blog post
 description: Welcome to my fourth blog post using the content module.
 slug: 4-fourth-post
 img: blog-2.jpg
+date: 24-08-2023
 ---
 
 # My first blog post

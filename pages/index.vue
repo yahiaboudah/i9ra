@@ -13,7 +13,7 @@
             <img style="border-radius: 11%; overflow: hidden;" :src="require(`~/assets/resources/${article.img}`)" alt="" />
 					
             <div class="detail">
-							<p style="color: yellowgreen; margin-bottom: 2px;">{{ article.createdAt.split('T')[0] }}</p>
+							<p style="color: yellowgreen; margin-bottom: 2px;">{{ article.date }}</p>
               <h3>{{ article.title }}</h3>
 							<p class="desc">{{ article.description }}</p>
 						</div>
@@ -30,17 +30,32 @@
 
 <script>
 export default {
-	async asyncData({ $content, params }) {
-		const articles = await $content('blog', params.slug)
-			.only(['author', 'title', 'description', 'img', 'slug', 'createdAt', 'difficulty'])
-			.sortBy('createdAt', 'asc')
-			.fetch();
+  async asyncData({ $content, params }) {
+    
+    const articles = await $content('blog', params.slug)
+      .only(['title', 'description', 'img', 'slug', 'date'])
+      .fetch();
 
-		return {
-			articles
-		}
-	}
-}
+    // Custom comparator function to sort articles by date
+    function compareDates(article1, article2) {
+      const date1 = article1.date;
+      const date2 = article2.date;
+
+      const [day1, month1, year1] = date1.split('-').map(Number);
+      const [day2, month2, year2] = date2.split('-').map(Number);
+
+      if (year1 !== year2) return year2 - year1;
+      if (month1 !== month2) return month2 - month1;
+      return day2 - day1;
+    }
+
+    const sortedArticles = articles.sort(compareDates);
+
+    return {
+      articles: sortedArticles
+    };
+  }
+};
 </script>
 
 <style scoped>

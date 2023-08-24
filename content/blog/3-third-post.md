@@ -1,11 +1,8 @@
 ---
-author: يحيى بوداح
 title: My third blog post
 description: Welcome to my third blog post using the content module.
 slug: 3-third-post
 img: blog-1.jpg
-createdAt: 22/08/2023
-difficulty: 3
 ---
 
 # Mastering VueJS

@@ -59,7 +59,13 @@
   .card-img {
     display: block;
     width: 100%;
-    max-width: 220px;
+    border-radius: 10px;
+    width: 220px;
+    overflow: hidden;
+  }
+
+  .card-img img {
+    width: 100%;
   }
   
   .card-content {

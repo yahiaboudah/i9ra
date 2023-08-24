@@ -1,11 +1,8 @@
 ---
-author: يحيى بوداح
 title: My second blog post
 description: Welcome to my second blog post using the content module.
 slug: 2-second-post
 img: blog-2.jpg
-createdAt: 22/08/2023
-difficulty: 2
 ---
 
 # Mastering VueJS

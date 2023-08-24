@@ -8,21 +8,13 @@
       <div class="article" v-for="article of articles" :key="article">
         <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
 
-          <Card
-            :image="article.img"
-            :date="article.createdAt"
-            :author= "article.author"
-            :title= "article.title"
-            :description="article.description"
-            :difficulty="article.difficulty"
-          />
-
 				  <div class="article-inner">
 					
-            <img :src="require(`~/assets/resources/${article.img}`)" alt="" />
+            <img style="border-radius: 11%; overflow: hidden;" :src="require(`~/assets/resources/${article.img}`)" alt="" />
 					
             <div class="detail">
-							<h3>{{ article.title }}</h3>
+							<p style="color: yellowgreen; margin-bottom: 2px;">{{ article.createdAt.split('T')[0] }}</p>
+              <h3>{{ article.title }}</h3>
 							<p class="desc">{{ article.description }}</p>
 						</div>
 				  
@@ -106,7 +98,7 @@ export default {
   .article-inner .detail {
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 10px;
+    margin-top: 1px;
   }
 
   .article-inner .desc {

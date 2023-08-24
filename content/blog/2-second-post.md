@@ -9,6 +9,7 @@ img: blog-2.jpg
 ### My learning notes on Vue (version 3)
 
 ## Installation Types
+## Experimental title
 
 - CDN
 - NPM

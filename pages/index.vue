@@ -6,7 +6,17 @@
     <div dir="rtl" class="articles">
 		  
       <div class="article" v-for="article of articles" :key="article">
-			  <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
+        <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
+
+          <Card
+            :image="article.img"
+            :date="article.createdAt"
+            :author= "article.author"
+            :title= "article.title"
+            :description="article.description"
+            :difficulty="article.difficulty"
+          />
+
 				  <div class="article-inner">
 					
             <img :src="require(`~/assets/resources/${article.img}`)" alt="" />
@@ -30,7 +40,7 @@
 export default {
 	async asyncData({ $content, params }) {
 		const articles = await $content('blog', params.slug)
-			.only(['title', 'description', 'img', 'slug'])
+			.only(['author', 'title', 'description', 'img', 'slug', 'createdAt', 'difficulty'])
 			.sortBy('createdAt', 'asc')
 			.fetch();
 
@@ -44,74 +54,74 @@ export default {
 <style scoped>
 
 
-@media (max-width: 500px) {
+  @media (max-width: 500px) {
+    .article-inner {
+      flex-direction: column; /* Stack elements on mobile */
+      align-items: center;
+    }
+
+    .article-inner img {
+      width: 100%;
+      max-width: 440px; /* Adjust image width to fit mobile screen */
+      margin-bottom: 15px; /* Add margin to separate image and text */
+    }
+
+    .article-inner .detail {
+      text-align: center; /* Center-align text on mobile */
+    }
+  }
+
+  .home-page {
+    padding: 50px 30px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .articles {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .article {
+    margin-bottom: 15px;
+  }
+
   .article-inner {
-    flex-direction: column; /* Stack elements on mobile */
-    align-items: center;
+    padding: 15px;
+    background: #FFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    display: flex;
   }
 
   .article-inner img {
+    display: block;
     width: 100%;
-    max-width: 440px; /* Adjust image width to fit mobile screen */
-    margin-bottom: 15px; /* Add margin to separate image and text */
+    max-width: 220px;
   }
-
   .article-inner .detail {
-    text-align: center; /* Center-align text on mobile */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
   }
-}
 
-.home-page {
-  padding: 50px 30px;
-}
+  .article-inner .desc {
+    margin-top: 10px;
+  }
 
-h2 {
-  margin-bottom: 30px;
-  text-align: center;
-}
+  h3 {
+    color: #212121;
+    font-size: 24px;
+    text-decoration: none;
+  }
 
-.articles {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.article {
-  margin-bottom: 15px;
-}
-
-.article-inner {
-  padding: 15px;
-  background: #FFF;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-
-  display: flex;
-}
-
-.article-inner img {
-  display: block;
-  width: 100%;
-  max-width: 220px;
-}
-.article-inner .detail {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 10px;
-}
-
-.article-inner .desc {
-  margin-top: 10px;
-}
-
-h3 {
-  color: #212121;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-p {
-  color: #888;
-  font-size: 18px;
-  text-decoration: none;
-}
+  p {
+    color: #888;
+    font-size: 18px;
+    text-decoration: none;
+  }
 </style>

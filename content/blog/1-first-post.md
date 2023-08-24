@@ -1,9 +1,11 @@
 ---
+author: يحيى بوداح
 title: عنواني الأولاني يا حبيبي
 description: Welcome to my first blog post using the content module.
 slug: 1-first-post
 img: blog-1.jpg
 createdAt: 22/08/2023
+difficulty: 1
 ---
 
 مُحرر دوّن هو محرر ماركداون (Markdown) سهل للغاية، لا يحتاج منك أي جهد لتعلم الكتابة به. فقط اكتب أو عدّل هذا النص!

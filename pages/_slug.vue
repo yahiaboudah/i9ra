@@ -17,37 +17,44 @@ export default {
 
 <style>
 
-.article_title {
-  font-size: 28px;
-  font-weight: 900;
-}
+  .article_title {
+    font-size: 38px;
+    font-weight: 1200;
+  }
 
-pre {
-  background-color: #f4f4f4;
-  padding: 10px;
-  border-radius: 19px;
-  overflow: auto;
-}
+  pre {
+    border-radius: 15px;
+  }
 
-code {
-  font-family: 'Monaco', monospace;
-  font-size: 20px;
-  color: #333;
-}
+  code {
+    font-family: 'JetBrains Mono';
+    font-size: 25px;
+    color: #e0e0e0;
+  }
 
-article {
-  display: block;
-  margin: 0 auto;
-  padding: 50px 25px;
-  max-width: 800px;
-  display: flex; /* Use flexbox for centering vertically and horizontally */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center-align children horizontally */
-}
+  article {
+    display: block;
+    direction: rtl;
+    margin: 0 auto;
+    padding: 50px 25px;
+    max-width: 800px;
+    display: flex; /* Use flexbox for centering vertically and horizontally */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children horizontally */
+  }
 
-h1 {
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 30px;
-}
+  h1 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+
+  p, ul, li {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
 </style>

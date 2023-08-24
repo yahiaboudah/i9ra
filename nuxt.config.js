@@ -11,7 +11,10 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/i9ra_icon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/i9ra_icon.png' },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Oxygen&display=swap"},
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cairo&display=swap"},
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=JetBrains Mono&display=swap"},
     ]
   },
 

@@ -13,14 +13,23 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: sans-serif;
+  width: 100%;
+
+  font-family: Cairo;
 }
+
+pre[class*="language-"] {
+  background: #14141b;
+}
+
 body {
-  background-color: #EEE;
+  background-color: #ededed;
 }
+
 a {
   text-decoration: none;
 }
+
 p {
   margin-bottom: 15px;
 }

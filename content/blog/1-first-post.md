@@ -42,6 +42,13 @@ npx init
 ```
 sudo apt install firefox
 ```
+```css
+.cardy {
+    display: flex;
+    flex-direction: row; /* Display image and content side by side */
+  }
+```
+
 
 ```
 firefox --help me do something with firefox

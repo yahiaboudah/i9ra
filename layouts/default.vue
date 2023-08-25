@@ -15,10 +15,11 @@
 
   width: 100%;
 
-  font-family: Cairo;
 }
 
 pre[class*="language-"] {
+  direction: ltr;
+  text-shadow: none;
   background: #14141b;
 }
 

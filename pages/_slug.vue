@@ -1,7 +1,7 @@
 <template>
   <article>
     <h1 class="article_title">{{article.title}}</h1>
-	  <nuxt-content dir="rtl" :document="article" />
+	  <nuxt-content :document="article" />
   </article>
 </template>
 
@@ -24,12 +24,14 @@ export default {
 
   pre {
     border-radius: 15px;
+    font-family: 'JetBrains Mono';
   }
 
   code {
     font-family: 'JetBrains Mono';
     font-size: 25px;
-    color: #e0e0e0;
+    text-decoration: none;
+    color: #ffffff;
   }
 
   article {
@@ -47,14 +49,21 @@ export default {
     font-size: 28px;
     font-weight: 900;
     margin-bottom: 30px;
+    font-family: Cairo;
   }
 
   p, ul, li {
     font-size: 22px;
+    font-family: Cairo;
   }
 
   h2 {
     font-size: 26px;
+    font-family: Cairo;
+  }
+
+  h3 {
+    font-family: Cairo;
   }
 
 </style>

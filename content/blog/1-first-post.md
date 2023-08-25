@@ -45,8 +45,18 @@ sudo apt install firefox
 ```css
 .cardy {
     display: flex;
-    flex-direction: row; /* Display image and content side by side */
-  }
+    flex-direction: row;
+}
+```
+
+```rust
+fn main() {
+    print!("{}", "some code");
+}
+
+fn secondary() {
+    return 5;
+}
 ```
 
 

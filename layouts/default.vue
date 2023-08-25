@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   width: 100%;
 
 }
@@ -21,6 +20,10 @@ pre[class*="language-"] {
   direction: ltr;
   text-shadow: none;
   background: #14141b;
+}
+
+code {
+    color: #3f3f3f;
 }
 
 body {

@@ -28,10 +28,14 @@ export default {
   }
 
   code {
+    color: #6d0000;
+  }
+
+  pre code {
     font-family: 'JetBrains Mono';
     font-size: 25px;
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
   }
 
   article {

@@ -26,7 +26,7 @@ export default {
     border-radius: 15px;
     font-family: 'JetBrains Mono';
   }
-
+  
   code {
     color: #6d0000;
   }

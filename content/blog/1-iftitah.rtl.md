@@ -1,9 +1,9 @@
 ---
-title: عنواني الأولاني يا حبيبي
-description: Welcome to my first blog post using the content module.
-slug: 1-first-post
-img: blog-1.jpg
-date: 21-08-2023
+title: افتتاح المدونة
+description: مرحبا بكم في مدونة اقرأ للبرمجة و التكنولوجيا
+slug: 1-iftitah.rtl
+img: i9ra.png
+date: 26-08-2023
 ---
 
 مُحرر دوّن هو محرر ماركداون (Markdown) سهل للغاية، لا يحتاج منك أي جهد لتعلم الكتابة به. فقط اكتب أو عدّل هذا النص!
@@ -26,7 +26,7 @@ npx init
 #### عنوان رابع
 
 أدرج صورًا بهذا الشكل:
-![نص الصورة](https://app.dawin.io/example.png)
+![علامة اقرأ](/assets/resources/i9ra.png)
 
 أو قائمة عناصر بهذا الشكل:
 * عنصر
@@ -39,7 +39,7 @@ npx init
 3. عنصر ثالث.
 4. عنصر رابع
 
-# هل أنت انسان أم حيوان
+# هل أنت انسان أم حيوان 
 أنا إنسان محترم لدي شهادة كبيرة في مجال الانسانية
 
 ```

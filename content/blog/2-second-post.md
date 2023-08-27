@@ -18,7 +18,7 @@ date: 20-08-2023
 - Vite
 
 ![some image](https://mokkapps.twic.pics/mokkapps.de/blog/create-a-blog-with-nuxt-content-v2/cover_gvizzf.jpg)
-![some image](_nuxt/assets/resources/i9ra.png)
+![some image](code/assets/resources/i9ra.png)
 
 ### CLI Installation
 The `cli` installation is easy but requires prior knowledge of `NodeJS`.

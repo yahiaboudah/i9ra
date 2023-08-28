@@ -10,7 +10,7 @@
 
 				  <div class="article-inner">
 					
-            <img style="border-radius: 11%; overflow: hidden;" :src="require(`~/assets/resources/${article.img}`)" alt="" />
+            <img style="border-radius: 11%; overflow: hidden;" :src="require(`~/assets/thumbnails/${article.img}`)" alt="" />
 					
             <div class="detail">
 							<p style="color: yellowgreen; margin-bottom: 2px;">{{ article.date }}</p>

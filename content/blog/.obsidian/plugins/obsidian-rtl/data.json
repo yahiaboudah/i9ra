@@ -1,8 +1,9 @@
 {
   "fileDirections": {
-    "افتتاح.md": "rtl"
+    "iftitah.md": "auto",
+    "nadra-ala-extendscript.md": "auto"
   },
-  "defaultDirection": "ltr",
+  "defaultDirection": "rtl",
   "rememberPerFile": true,
   "setNoteTitleDirection": true,
   "setYamlDirection": false,

@@ -2,7 +2,7 @@
     <div class="card">
       <div class="cardy">
         <div class="card-img">
-          <img :src="require(`~/assets/resources/${image}`)">
+          <img :src="require(`~/assets/thumbnails/${image}`)">
         </div>
   
         <div class="card-content">

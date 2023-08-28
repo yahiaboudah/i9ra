@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iftitah.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2638882d0b3cd21b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "nadra-ala-extendscript.md",
+                "file": "nadra-ala-extendscript-1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "nadra-ala-extendscript.md",
+                "file": "nadra-ala-extendscript-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "nadra-ala-extendscript.md",
+                "file": "nadra-ala-extendscript-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "nadra-ala-extendscript.md"
+                "file": "nadra-ala-extendscript-1.md"
               }
             }
           }
@@ -159,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2638882d0b3cd21b",
+  "active": "306557fa15c8578c",
   "lastOpenFiles": [
     "iftitah.md",
     "nadra-ala-extendscript.md",
+    "nadra-ala-extendscript-1.md",
     "old/3-third-post",
     "old/2-second-post.md",
     "old/4-fourth-post",

@@ -15,7 +15,8 @@ date: 27-08-2023
 	Hello, World!
 <div>
 ```
-![image here](i9ra.png)
+![image here](./i9ra.png)
+
 ```css
 * {
 	/*test*/

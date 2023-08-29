@@ -1,7 +1,6 @@
 {
   "fileDirections": {
-    "iftitah.md": "auto",
-    "nadra-ala-extendscript-1.md": "auto"
+    "nadra-ala-extendscript-1/index.md": "auto"
   },
   "defaultDirection": "rtl",
   "rememberPerFile": true,

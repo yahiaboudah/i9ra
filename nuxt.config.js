@@ -36,12 +36,15 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/content
-    'nuxt-content-assets',
     '@nuxt/content',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    markdown: {
+      remarkPlugins: ['@nuxt/content/plugins/remark-plugin'],
+    },
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

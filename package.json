@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "prebuild":"node organize.js",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxt/content": "^1.9.0",
+    "@nuxt/content": "^2.0.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6"
-  },
-  "devDependencies": {}
+  }
 }

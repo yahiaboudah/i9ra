@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "prebuild":"node organize.js",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"

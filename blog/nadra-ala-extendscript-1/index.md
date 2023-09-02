@@ -12,7 +12,7 @@ date: 29-08-2023
 أبسط شيء يمكننا فعله في أي لغة هي طباعة رسالة.
 
 ![install-extendscript-and-run](install-extendscript-and-run.gif)
-كما شاهدتم يجب علينا تثبيت إضافة ExtendScript Debugger أولا ثم الضغط على زر `F5` و اتباع الخطوات للحصول على رسالة في مساحة Debug Console.
+كما شاهدتم يجب علينا تثبيت إضافة ***ExtendScript Debugger*** أولا ثم الضغط على زر <kbd>F5</kbd> و اتباع الخطوات للحصول على رسالة في مساحة Debug Console.
 ```jsx
 $.writeln("Hello, After effects!")
 ```

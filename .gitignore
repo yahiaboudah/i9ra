@@ -13,7 +13,6 @@ pids
 *.seed
 *.pid.lock
 
-blog
 design
 
 .obsidian/

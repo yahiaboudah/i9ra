@@ -3,6 +3,7 @@ title: افتتاح المدونة
 description: مرحبا بكم في مدونة اقرأ للبرمجة و التكنولوجيا
 slug: iftitah
 img: iftitah-th.png
+level: 0
 date: 27-08-2023
 ---
 

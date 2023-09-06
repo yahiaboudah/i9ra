@@ -20,7 +20,17 @@
 							<p style="color: yellowgreen; margin-bottom: 2px;">{{ article.date }}</p>
               <h3>{{ article.title }}</h3>
 							<p class="desc">{{ article.description }}</p>
-						</div>
+              
+              <div class="rating">
+                <img class="ratingImg" v-for="index in 5" :key="index"
+                  :src="getRatingImage(index, article.level)"
+                  alt="ratingimage"
+                />
+              </div>
+            
+            </div>
+
+            
 				  
           </div>
 			  </nuxt-link>
@@ -59,7 +69,16 @@ export default {
     return {
       articles: sortedArticles
     };
+  },
+  
+  methods: {
+    // Define a method to determine the star image based on the "level"
+    getRatingImage(index, level) {
+      if (index <= level) return require(`~/design/a.png`);
+      else return require(`~/design/a_off.png`);
+    },
   }
+  
 };
 </script>
 
@@ -81,6 +100,19 @@ export default {
     .article-inner .detail {
       text-align: center; /* Center-align text on mobile */
     }
+  }
+
+
+  .ratingImg {
+    width: 10px;
+    height: 100%;
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    margin-top: 20px;
   }
 
   .home-page {
@@ -118,8 +150,8 @@ export default {
     margin-bottom: 10px;
     
     text-align: center; 
-    background-color: #fff;
-    border-radius: 6px;
+    background-color: #ffffff;
+    border-radius: 2px;
   }
 
   .articles {
@@ -127,7 +159,7 @@ export default {
     max-width: 600px;
     padding: 50px 30px 50px 30px;
 
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(250, 250, 250);
     border-radius: 2%;
   }
 

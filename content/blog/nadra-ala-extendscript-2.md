@@ -3,6 +3,7 @@ title: نظرة على Extendscript 2
 description: خصائص لغة جافاسكريبت 3
 slug: nadra-ala-extendscript-2
 img: nadra-ala-extendscript-2-th.png
+level: 2
 date: 05-09-2023
 ---
 سنكمل حيث توقفنا أي في طباعة رسالة. دعونا نفعل شيئا مثيرا و نتواصل مع واجهة After Effects. كل ما عليك فعله هو انشاء تركيبة جديدة أي composition داخل البرنامج وإضافة صورة داخل لافتة المشروع وكذلك اضافة شكل من الأشكال داخل الجدول الخاص بالتركيبة.

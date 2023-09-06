@@ -1,8 +1,11 @@
 <template>
-  <article>
-    <h1 class="article_title">{{article.title}}</h1>
-	  <nuxt-content :document="article" />
-  </article>
+      <div class="big-container">
+          <div class="background-slug">This</div>
+          <article>
+            <h1 class="article_title">{{article.title}}</h1>
+            <nuxt-content :document="article" />
+          </article>
+      </div>
 </template>
 
 <script>
@@ -17,6 +20,38 @@ export default {
 </script>
 
 <style>
+
+  article {
+    display: block;
+    direction: rtl;
+    margin: 0 auto;
+    padding: 50px 25px;
+    max-width: 940px;
+    display: flex; /* Use flexbox for centering vertically and horizontally */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children horizontally */
+    background: linear-gradient(135deg, #e6e6e6, #ffffff);
+    border-radius: 1.5%;
+  }
+
+  .big-container {
+    z-index: 0;
+    position: relative;
+  }
+
+  .background-slug {
+    background-image: url('../design/a.png');
+    background-repeat: repeat;
+    background-color: antiquewhite; 
+    height: 100%;
+
+    opacity: 0.05;
+
+    position: absolute; /* Add position: absolute */
+    top: 0;
+    left: 0;
+    z-index: -1;
+  } 
 
   .article_title {
     font-size: 38px;
@@ -39,16 +74,6 @@ export default {
     color: #fff;
   }
 
-  article {
-    display: block;
-    direction: rtl;
-    margin: 0 auto;
-    padding: 50px 25px;
-    max-width: 800px;
-    display: flex; /* Use flexbox for centering vertically and horizontally */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center-align children horizontally */
-  }
 
   h1 {
     font-size: 28px;

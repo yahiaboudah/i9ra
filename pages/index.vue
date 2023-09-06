@@ -1,8 +1,12 @@
 <template>
   <div class="home-page">
 	  
-    <h2>المنشورات</h2>
-	  
+    <div class="background-stuff"></div>
+
+    <div class="manshoorat">
+      <h2>المنشورات</h2>
+    </div>
+
     <div dir="rtl" class="articles">
 		  
       <div class="article" v-for="article of articles" :key="article">
@@ -81,16 +85,50 @@ export default {
 
   .home-page {
     padding: 50px 30px;
+    z-index: 0;
+    position: relative;
   }
+
+  .background-stuff {
+    background-image: url('../design/a.png');
+    background-repeat: repeat;
+    background-color: antiquewhite; 
+    height: 100%;
+
+    opacity: 0.05;
+
+    position: absolute; /* Add position: absolute */
+    top: 0;
+    left: 0;
+    z-index: -1;
+  } 
 
   h2 {
     margin-bottom: 30px;
     text-align: center;
   }
 
+  .manshoorat {
+    
+    width: 150px;
+    margin: 0 auto; 
+    
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    
+    text-align: center; 
+    background-color: #fff;
+    border-radius: 6px;
+  }
+
   .articles {
     margin: 0 auto;
     max-width: 600px;
+    padding: 50px 30px 50px 30px;
+
+    background-color: rgb(236, 236, 236);
+    border-radius: 2%;
   }
 
   .article {

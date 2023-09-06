@@ -74,8 +74,8 @@ export default {
   methods: {
     // Define a method to determine the star image based on the "level"
     getRatingImage(index, level) {
-      if (index <= level) return require(`~/design/a.png`);
-      else return require(`~/design/a_off.png`);
+      if (index <= level) return require(`~/static/a.png`);
+      else return require(`~/static/a_off.png`);
     },
   }
   

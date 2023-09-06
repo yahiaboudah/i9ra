@@ -40,7 +40,7 @@ export default {
   }
 
   .background-slug {
-    background-image: url('../design/a.png');
+    background-image: url('~/static/a.png');
     background-repeat: repeat;
     background-color: antiquewhite; 
     height: 100%;

@@ -48,7 +48,7 @@ export default {
   async asyncData({ $content, params }) {
     
     const articles = await $content('blog', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'date'])
+      .only(['title', 'description', 'img', 'slug', 'date', 'level'])
       .fetch();
 
     // Custom comparator function to sort articles by date
@@ -125,9 +125,10 @@ export default {
     background-image: url('../design/a.png');
     background-repeat: repeat;
     background-color: antiquewhite; 
+    background-size: 200px;
     height: 100%;
 
-    opacity: 0.05;
+    opacity: 0.03;
 
     position: absolute; /* Add position: absolute */
     top: 0;
@@ -167,6 +168,7 @@ export default {
     margin-bottom: 15px;
   }
 
+
   .article-inner {
     padding: 15px;
     background: #FFF;
@@ -175,7 +177,6 @@ export default {
 
     display: flex;
   }
-
   .article-inner img {
     display: block;
     width: 100%;
@@ -185,6 +186,36 @@ export default {
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 1px;
+  }
+
+  .article-inner:hover {
+    img {
+        transform: scale(1.09) rotate(-3deg); 
+        transition: transform 0.3s ease;
+    }
+  }
+  
+  .article-inner h3 {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .article-inner h3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline as needed */
+    bottom: 0;
+    right: 0;
+    background-color: #047a00; /* Adjust the color of the underline as needed */
+    transform: scaleX(0); /* Initially, the underline is hidden */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+
+  .article-inner:hover h3::after {
+    transform: scaleX(1); /* Show the underline on hover */
+    transform-origin: bottom right;
   }
 
   .article-inner .desc {

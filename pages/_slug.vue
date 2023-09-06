@@ -1,6 +1,6 @@
 <template>
       <div class="big-container">
-          <div class="background-slug">This</div>
+          <div class="background-slug"></div>
           <article>
             <h1 class="article_title">{{article.title}}</h1>
             <nuxt-content :document="article" />
@@ -58,20 +58,18 @@ export default {
     font-weight: 1200;
   }
 
-  pre {
+  pre[class*="language-"] {
+    direction: ltr;
+    text-shadow: none;
+    background: #dbd3d9;
     border-radius: 15px;
-    font-family: 'JetBrains Mono';
-  }
-  
-  code {
-    color: #6d0000;
   }
 
   pre code {
-    font-family: 'JetBrains Mono';
+    font-family: JetBrains Mono;
     font-size: 25px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
   }
 
 

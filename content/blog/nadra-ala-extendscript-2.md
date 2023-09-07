@@ -13,7 +13,7 @@ date: 05-09-2023
 سنبدأ بمحاولة الحصول على أسماء كل من الصورة و الطبقة التي قمنا بانشائها
 
 ```js
-var comp = app.project.activItem; // هكذا نصل الى التركيبة
+var comp = app.project.activeItem; // هكذا نصل الى التركيبة
 var layers = comp.layers; // هكذا نصل الى جميع الطبقات
 var layer = layes[0]; // هكذا نصل الى الطبقة الأولى
 $.writeln(layer.name); // كتابة اسم الطبقة الأولى "Shape Layer 1"
@@ -27,4 +27,10 @@ $.writeln(item.name); // laptopاسم العنصر الأول [1-2]
 ```
 
 بعد هذه الأمثلة البسيطة التي تتعلق بالواجهة سنقوم بمراجعة بعض خصائص اللغة  `JavaScript ES3` و كذلك الدوال المضافة من طرف شركة أدوبي.
+
+
+```mermaid
+flowchart TD
+hello --> there
+```
 #### 

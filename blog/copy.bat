@@ -1,0 +1,1 @@
+cd C:/Users/yahia/Desktop/i9ra && node organize.js
